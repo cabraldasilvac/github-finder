@@ -4,4 +4,4 @@
 
 ### Consumindo a API do GitHub
 
-#### Em desenvolvimento... Seguindo instruções do video de @MatheusBattisti do canal "Hora de Codar"
+#### Em desenvolvimento... Seguindo instruções do video de [@MatheusBattisti](https://youtu.be/3sQITRihW_A) do canal "Hora de Codar"
