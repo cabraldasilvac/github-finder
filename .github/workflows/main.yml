@@ -9,12 +9,11 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-
   deploy-dev:
     runs-on: ubuntu-latest
-    environment: 
+    environment:
       name: dev
-      url: 'cartao-digital-sigma.vercel.app/'
+      url: "https://cartao-digital-sigma.vercel.app/"
     needs: build
     steps:
       - name: Run a one-line script
@@ -22,20 +21,19 @@ jobs:
 
   deploy-hmg:
     runs-on: ubuntu-latest
-    environment: 
+    environment:
       name: hmg
-      url: 'cartao-digital-sigma.vercel.app/'
+      url: "https://cartao-digital-sigma.vercel.app/"
     needs: deploy-dev
     steps:
       - name: Run a one-line script
         run: echo Deploy HMG
 
-
   deploy-prd:
     runs-on: ubuntu-latest
-    environment: 
+    environment:
       name: prd
-      url: 'cartao-digital-sigma.vercel.app/'
+      url: "https://cartao-digital-sigma.vercel.app/"
     needs: deploy-hmg
     steps:
       - name: Run a one-line script

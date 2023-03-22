@@ -32,6 +32,12 @@
   font-weight: bold;
 }
 
+.bio {
+  color: #9da5d1;
+  font-weight: bold;
+}
+
+
 .stats {
   display: flex;
 }

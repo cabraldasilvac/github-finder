@@ -3,6 +3,7 @@ import { UserProps } from "../types/user";
 import Search from "../components/Search";
 import User from "../components/User";
 import Error from "../components/Error";
+import Repos from "../components/Repos";
 
 import { useState } from "react";
 
@@ -23,11 +24,12 @@ const Home = () => {
       return;
     }
 
-    const { avatar_url, login, location, followers, following } = data;
+    const { avatar_url, login, bio, location, followers, following } = data;
 
     const userData: UserProps = {
       avatar_url,
       login,
+      bio,
       location,
       followers,
       following,

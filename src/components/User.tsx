@@ -7,6 +7,7 @@ import classes from "./User.module.css";
 const User = ({
   login,
   avatar_url,
+  bio,
   followers,
   following,
   location,
@@ -15,12 +16,14 @@ const User = ({
     <div className={classes.user}>
       <img src={avatar_url} alt={login} />
       <h2>{login}</h2>
+     
       {location && (
         <p className={classes.location}>
           <MdLocationPin />
           <span>{location}</span>
         </p>
       )}
+       <div className={classes.bio}>Bio - {bio} </div>
       <div className={classes.stats}>
         <div>
           {" "}
